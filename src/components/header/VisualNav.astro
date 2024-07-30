@@ -1,0 +1,59 @@
+<nav id="VisualNav">
+  <ul>
+    <li>
+      <button class="inico"> </button>
+      <button class="frameworks"> </button>
+      <button class="languages"> </button>
+      <button class="proffesions"> </button>
+      <button class="forme"> </button>
+    </li>
+    <li>
+      <button class="cv"> </button>
+      <button class="CVContacto"> </button>
+    </li>
+    <li>
+      <button class="contacto"> </button>
+    </li>
+  </ul>
+</nav>
+<script></script>
+
+<style>
+  nav {
+    position: fixed;
+    bottom: 0;
+
+    background-color: rgba(127, 255, 212, 0.2);
+    width: 100%;
+    min-height: 40px;
+
+    & > ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      list-style: none;
+
+      justify-content: center;
+
+      li {
+        margin: 0 10px;
+
+        & > button {
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+        }
+        & > button:first-child {
+          scale: 1.4;
+          transform: translateY(-2 px);
+          background-color: aquamarine;
+        }
+
+        &>button.focus {
+            transform: translateY(-10px);
+        }
+      }
+    }
+  }
+</style>
